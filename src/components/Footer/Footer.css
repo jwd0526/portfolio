@@ -1,0 +1,54 @@
+.footer-box {
+  background: transparent;
+  width: auto;
+  height: 500px;
+  overflow-y: hidden;
+}
+
+.scorp-box {
+  width: 575px;
+  height: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: -90px;
+  margin-left: -295px;
+  animation: dig 15s linear infinite;
+}
+
+.scorp {
+  rotate: 180deg;
+  position: relative;
+  z-index: 1;
+  margin-top: -80px;
+  font-size: 40px;
+  width: fit-content;
+  rotate: -220deg;
+  animation: wiggle 0.3s linear infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes dig {
+  0% {
+    transform: rotate(0deg);
+    bottom: 0px;
+  }
+  50% {
+    transform: rotate(180deg);
+    bottom: 30px;
+  }
+  100% {
+    transform: rotate(360deg);
+    bottom: 0px;
+  }
+}

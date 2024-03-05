@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import "./images/dan.jpg";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import Extra from "./components/Extra";
+import Footer from "./components/Footer";
 
-function App() {
+const App: React.FC = () => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(".hidden");
+    const hiddenHeaderElements = document.querySelectorAll(".hidden-header");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    });
+
+    Array.from(hiddenHeaderElements).map((el) => observer.observe(el));
+
+    Array.from(hiddenElements).map((el) => observer.observe(el));
+
+    return () => {
+      Array.from(hiddenHeaderElements).map((el) => observer.unobserve(el));
+      Array.from(hiddenElements).map((el) => observer.unobserve(el));
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="desktop">
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Resume />
+      <Extra />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

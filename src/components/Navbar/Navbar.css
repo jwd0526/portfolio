@@ -1,0 +1,25 @@
+.nav-item {
+  color: white;
+  font-size: 24px;
+}
+
+.nav-format {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: linear-gradient(180deg, #020617 80%, #0f172a 100%);
+  padding-bottom: 30px;
+  z-index: 2;
+}
+
+.nav-inner-format {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}

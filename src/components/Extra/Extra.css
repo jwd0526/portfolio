@@ -1,0 +1,36 @@
+.filler {
+  color: white;
+  font-family: ReemKufiFun;
+  font-size: 20px;
+}
+
+.cloud-box {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -300px;
+  display: flex;
+  flex-direction: row-reverse;
+  background: transparent;
+  width: 111vw;
+  overflow-x: hidden;
+}
+
+.cloud {
+  font-size: 200px;
+  margin: 0;
+}
+
+.mover {
+  position: relative;
+  animation: move 20s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 110vw;
+  }
+}

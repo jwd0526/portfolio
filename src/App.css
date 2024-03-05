@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: "ReemKufiFun";
+  overflow-x: hidden;
+}
+html,
+body {
+  height: 100%;
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.desktop {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-height: 5030px;
 }
 
-.App-link {
-  color: #61dafb;
+.root {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+  transition-delay: 300ms;
+}
+
+.hidden-header {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.textP1 {
+  transition-delay: 200ms;
+  transition: all 3s;
+  transform: translateX(-100%);
+}
+
+.textP2 {
+  transform: translateY(100%);
+  transition-delay: 800ms;
+}
+
+.line2 {
+  transform: translateX(100%);
+  transition-delay: 1400ms;
+}
+
+.line3 {
+  transform: translateY(-200%);
+  transition-delay: 2400ms;
+  transform: all 3s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+}
+
+@font-face {
+  font-family: "ReemKufiFun";
+  src: local("ReemKufiFun"),
+    url("./fonts/ReemKufiFun-Regular.ttf") format("truetype");
 }

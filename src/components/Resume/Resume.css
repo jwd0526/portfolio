@@ -1,0 +1,25 @@
+.button-description {
+  color: white;
+  font-family: ReemKufiFun;
+  font-size: 20px;
+}
+
+.download-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  background: #1e293b;
+  color: white;
+  font-family: ReemKufiFun;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition-delay: 100ms;
+  transition-duration: 500ms;
+}
+
+.download-button:hover {
+  background: #3c5275;
+  transition-duration: 0ms;
+  transition-delay: 0ms;
+}
