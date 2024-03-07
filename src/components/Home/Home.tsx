@@ -37,13 +37,8 @@ const Animation: React.FC = () => {
   return (
     <div className="animation-box">
       <div style={{ position: "relative" }}>
-        <div className="image-box">
-          <img
-            className="line2 hidden"
-            style={{ width: "100%", height: "100%" }}
-            src={dan}
-            alt="dan"
-          />
+        <div className="image-box line2 hidden">
+          <img style={{ width: "100%", height: "100%" }} src={dan} alt="dan" />
         </div>
         <div className="rotate-image line2 hidden">🚀</div>
       </div>

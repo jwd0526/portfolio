@@ -7,12 +7,13 @@
 .grid-element {
   width: 200px;
   height: 200px;
-  background: rgb(190, 190, 190);
+  background: rgb(228, 228, 228);
   border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
 }
 
 .grid-element:hover {
-  background: rgb(133, 133, 133);
+  background: rgb(202, 202, 202);
   cursor: pointer;
   transition-duration: 100ms;
   transition-delay: 0ms;

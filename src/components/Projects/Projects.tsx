@@ -64,31 +64,41 @@ const Projects: React.FC = () => {
       name="Project 2"
       embedID="21TvZ0DpvtU"
       gitHubLink="https://github.com/jwd0526/TextMailer"
-      descriptionContent={<p></p>}></ProjectContent>,
+      descriptionContent={
+        <p>Description content will go here.</p>
+      }></ProjectContent>,
     <ProjectContent
       className="project3"
       name="Project 3"
       embedID="21TvZ0DpvtU"
       gitHubLink="https://github.com/jwd0526/TextMailer"
-      descriptionContent={<p>Description goes here</p>}></ProjectContent>,
+      descriptionContent={
+        <p>Description content will go here.</p>
+      }></ProjectContent>,
     <ProjectContent
       className="project4"
       name="Project 4"
       embedID="21TvZ0DpvtU"
       gitHubLink="https://github.com/jwd0526/TextMailer"
-      descriptionContent={<p>Description goes here</p>}></ProjectContent>,
+      descriptionContent={
+        <p>Description content will go here.</p>
+      }></ProjectContent>,
     <ProjectContent
       className="project5"
       name="Project 5"
       embedID="21TvZ0DpvtU"
       gitHubLink="https://github.com/jwd0526/TextMailer"
-      descriptionContent={<p>Description goes here</p>}></ProjectContent>,
+      descriptionContent={
+        <p>Description content will go here.</p>
+      }></ProjectContent>,
     <ProjectContent
       className="project6"
       name="Project 6"
       embedID="21TvZ0DpvtU"
       gitHubLink="https://github.com/jwd0526/TextMailer"
-      descriptionContent={<p>Description goes here</p>}></ProjectContent>,
+      descriptionContent={
+        <p>Description content will go here.</p>
+      }></ProjectContent>,
   ];
 
   const handleGridElementClick = (content: React.ReactNode, index: number) => {
