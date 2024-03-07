@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer: React.FC = () => {
   return (
-    <div style={{ width: "100%", height: 505 }}>
+    <div style={{ width: "100%" }}>
       <div className="footer-box">
         <img
           style={{ width: "100%", height: "100%" }}

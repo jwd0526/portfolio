@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import "./images/dan.jpg";
+import up from "./images/upArrow.png";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -51,6 +52,13 @@ const App: React.FC = () => {
       <Resume />
       <Extra />
       <Footer />
+      <a href="#nav" className="return-top">
+        <img
+          style={{ width: "4vw", height: "4vw" }}
+          src={up}
+          alt="back to top"
+        />
+      </a>
     </div>
   );
 };

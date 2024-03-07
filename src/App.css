@@ -67,6 +67,19 @@ body.modal-open {
   transform: translateY(0);
 }
 
+.return-top {
+  position: fixed;
+  top: 88vh;
+  left: 92vw;
+  opacity: 0.6;
+  z-index: 3;
+}
+
+.return-top:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "ReemKufiFun";
   src: local("ReemKufiFun"),

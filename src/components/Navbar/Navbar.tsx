@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="nav-format">
+    <div className="nav-format" id="nav">
       <div className="nav-inner-format">
         <div className="nav-item home">
           <a>Home</a>
