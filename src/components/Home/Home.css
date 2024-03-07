@@ -37,6 +37,21 @@
   font-size: 25px;
 }
 
+.call-to-action {
+  font-size: 40px;
+  position: relative;
+  top: 23vh;
+}
+
+.animate {
+  transition-delay: 5s;
+  animation: fade-bob 3s linear 5.2s infinite;
+}
+
+.hide {
+  opacity: 0;
+}
+
 .animation-container {
   flex: 1 1 0;
   padding: 10px;
@@ -91,6 +106,18 @@
   background-color: white;
   animation: starAnimation 10s linear infinite alternate;
   overflow: hidden;
+}
+
+@keyframes fade-bob {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
 @keyframes spinner-new {

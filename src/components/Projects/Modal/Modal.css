@@ -12,17 +12,20 @@
 }
 
 .modal-content {
+  position: relative;
   background-color: white;
   padding: 20px;
-  width: 60vw;
-  height: 60vh;
+  max-width: 60vw;
+  max-height: 80vh;
+  width: fit-content;
+  height: fit-content;
   border-radius: 5px;
+  display: flex;
 }
 
 .close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  position: relative;
+  height: 25px;
 }
 
 .modal-navigation {
@@ -30,5 +33,15 @@
 }
 
 .nav-button {
-  flex-grow: 1; /* Distribute space evenly */
+  width: 3vw;
+  height: 15vh;
+  margin: 40px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.nav-button:hover {
+  background-color: rgba(165, 165, 165, 0.1);
+
+  border-radius: 5px;
 }

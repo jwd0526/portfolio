@@ -10,6 +10,17 @@ import Extra from "./components/Extra";
 import Footer from "./components/Footer";
 
 const App: React.FC = () => {
+  window.addEventListener("scroll", function () {
+    var element = document.getElementById("call");
+    var position = element?.getBoundingClientRect();
+    if (position) {
+      if (position.top >= 0 && position.bottom <= window.innerHeight) {
+        element?.classList.remove("animate");
+        element?.classList.add("hide");
+      }
+    }
+  });
+
   useEffect(() => {
     const hiddenElements = document.querySelectorAll(".hidden");
     const hiddenHeaderElements = document.querySelectorAll(".hidden-header");

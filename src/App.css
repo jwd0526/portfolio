@@ -10,6 +10,10 @@ body {
   scroll-behavior: smooth !important;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .desktop {
   display: flex;
   flex-direction: column;

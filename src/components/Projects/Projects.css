@@ -7,8 +7,15 @@
 .grid-element {
   width: 200px;
   height: 200px;
-  background: gray;
+  background: rgb(190, 190, 190);
   border-radius: 10px;
+}
+
+.grid-element:hover {
+  background: rgb(133, 133, 133);
+  cursor: pointer;
+  transition-duration: 100ms;
+  transition-delay: 0ms;
 }
 
 .projects-star-container {

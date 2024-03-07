@@ -1,0 +1,93 @@
+/* Project Container */
+.project-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  position: relative;
+}
+
+/* Individual Project */
+.project {
+  width: 300px; /* Adjust width as needed */
+  background-color: #ffffff; /* Adjust background color */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+  padding: 20px;
+  display: flex; /* Add this */
+  flex-direction: column; /* Add this */
+}
+
+/* Project Name */
+.name-text {
+  margin-top: 0px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Horizontal Divider */
+.horiz-divider {
+  border-top: 1px solid #dddddd; /* Adjust color */
+  margin: 20px 0;
+  margin-right: -10px;
+}
+
+/* Link Box */
+.linkBox {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.link-description {
+  margin: 0px;
+}
+
+/* GitHub Link */
+.github-link {
+  color: #0366d6; /* GitHub link color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+.description-box {
+  flex: 1;
+  height: 100%;
+  margin-right: -1.94vw;
+  overflow-y: scroll;
+  margin-top: 15px;
+}
+
+/* Vertical Divider */
+.vert-divider {
+  position: absolute;
+  top: 0;
+  height: 100%; /* Set height to match the parent */
+  width: 1px;
+  margin-left: 10px;
+  border-left: 1px solid #dddddd;
+}
+
+/* Project Description */
+.description {
+  top: 0;
+  max-width: 600px; /* Adjust max width as needed */
+  padding: 20px;
+  padding-left: 30px;
+}
+
+/* Description Title */
+.description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: -25px;
+}
+
+/* Description Content */
+.descript-content {
+  line-height: 1.5;
+}
