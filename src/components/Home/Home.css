@@ -74,6 +74,7 @@
   left: 0;
   animation: spinner-new 5s linear infinite;
   animation-fill-mode: forwards;
+  z-index: 2;
 }
 
 .relative {
