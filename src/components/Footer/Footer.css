@@ -1,9 +1,13 @@
 .footer-box {
   background: transparent;
   width: auto;
-  height: 500px;
+  height: 300px;
   overflow-y: hidden;
 }
+
+/* .icon-box {
+  pos
+} */
 
 .scorp-box {
   width: 575px;

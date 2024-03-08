@@ -57,9 +57,6 @@ const Home: React.FC = () => {
         </div>
         <div className="text line2 hidden">Jackson Davis</div>
         <div className="text line3 hidden">I code things.</div>
-        <div className="text animate call-to-action hidden" id="call">
-          🢃&emsp;&emsp;Check me out!&emsp;&emsp;🢃
-        </div>
       </div>
       <div className="animation-container">
         <Animation />
