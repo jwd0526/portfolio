@@ -1,4 +1,3 @@
-import { inherits } from "util";
 import Section from "../Section";
 import "./Extra.css";
 import { useEffect } from "react";
